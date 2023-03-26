@@ -1,0 +1,124 @@
+/* Thème 1 */
+:root {
+    /* Background */
+    --main-background : hsl(222, 26%, 31%);
+    --toggle-background : hsl(223, 31%, 20%);
+    --screen-background : hsl(224, 36%, 15%);
+    /* Touche */
+    --number-key-background : hsl(225, 21%, 49%);
+    --number-key-shadow : hsl(224, 28%, 35%);
+    --enter-key-background : hsl(6, 63%, 50%);
+    --enter-key-shadow :  hsl(6, 70%, 34%);
+    --grey-key-background : hsl(30, 25%, 89%);
+    --grey-key-shadow : hsl(28, 16%, 65%);
+
+    /* Texte */
+    --text-main : hsl(0, 0%, 100%);
+    --text-secondary : hsl(221, 14%, 31%);
+
+    font-family: 'League Spartan', sans-serif;
+}
+
+@keyframes slideFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+body {
+    background-color: var(--main-background);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: var(--text-main);
+    margin: 0px;
+}
+
+.calculatrice {
+    padding-top: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.screen {
+    background-color: var(--screen-background);
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: end;
+}
+
+#result {
+    font-size: 32px;
+    color: var(--text-main);
+    margin-right: 20px;
+}
+
+.keys {
+    background-color: var(--toggle-background);
+    border-radius: 10px;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.attribution {
+    padding-top: 20px;
+    color: var(--text-main);
+}
+
+.attribution > a {
+    color: var(--screen-background);
+}
+
+button {
+    width: 100%;
+    font-size: 32px;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--text-secondary);
+    border-radius: 7px;
+    border-width: 0px;
+    padding: 12px 0px 5px 0px;
+    transition: all 0.2s;
+}
+
+.numberKey, .operationKey {
+    color: var(--text-secondary);
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 4px 0px var(--grey-key-shadow);
+}
+
+.numberKey:active, .operationKey:active, #delKey:active, #resetKey:active, #enterKey:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.keys > div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+#delKey, #resetKey {
+    background-color: var(--number-key-background);
+    box-shadow: 0px 4px 0px var(--number-key-shadow);
+    color: var(--text-main)
+}
+
+#enterKey {
+    background-color: var(--enter-key-background);
+    box-shadow: 0px 4px 0px var(--enter-key-shadow);
+    color: var(--text-main)
+}

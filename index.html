@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Import de la police -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Calculator app</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div class="calculatrice">
+    <div class="header">
+      <h2>calc</h2>
+      <div class="themeSwitch"></div>
+    </div>
+    <div class="screen">
+      <p id="result"></p>
+    </div>
+    <div class="keys">
+      <div>
+        <button class="numberKey">7</button>
+        <button class="numberKey">8</button>
+        <button class="numberKey">9</button>
+        <button id="delKey">DEL</button>
+      </div>
+      <div>
+        <button class="numberKey">4</button>
+        <button class="numberKey">5</button>
+        <button class="numberKey">6</button>
+        <button class="operationKey">+</button>
+      </div>
+      <div>
+        <button class="numberKey">1</button>
+        <button class="numberKey">2</button>
+        <button class="numberKey">3</button>
+        <button class="operationKey">-</button>
+      </div>
+      <div>
+        <button class="operationKey">.</button>
+        <button class="numberKey">0</button>
+        <button class="operationKey">/</button>
+        <button class="operationKey">x</button>
+      </div>
+      <div>
+        <button id="resetKey">RESET</button>
+        <button id="enterKey">=</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Alexis Migniau</a>.
+  </div>
+
+  <!-- Script JS -->
+  <script src="script/index.js"></script>
+</body>
+</html>
