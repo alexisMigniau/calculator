@@ -14,5 +14,4 @@ Calculatrice fonctionnelle avec des opérations basiques
 
 ## Lien
 
-- [Démo]()
-- [Dépot](https://github.com/alexisMigniau/calculator)
+- [Démo](https://alexismigniau.github.io/calculator/)
